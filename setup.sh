@@ -29,9 +29,6 @@ fi
 open -a "App Store"
 read -p "ℹ️  Log in to the App Store and press any key..."
 
-# Install Casks that require a password
-brew install --cask slack zoom
-
 # Customise Dock
 dockutil --no-restart --remove all
 dockutil --no-restart --add "/Applications/Google Chrome.app"
@@ -49,11 +46,7 @@ echo -e "\033[1mFinal Steps\033[0m"
 cat << EOF
 macOS
 - Log in to iCloud
-- Set resolution to 'More Space' in System Preferences > Displays
-- Uncheck 'Show date' in System Preferences > Dock & Menu Bar > Clock
-- Change appearance to dark
 
 Chrome
 - Sign in
-- Setup Tampermonkey Dropbox sync
 EOF
