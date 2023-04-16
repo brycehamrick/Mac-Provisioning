@@ -44,15 +44,6 @@ killall Dock
 # Defaults
 ./defaults.sh
 
-# Add Go2Shell to Finder
-./defaults/finder.sh
-
-# Other defaults
-./defaults/other.sh
-
-# Set default file handlers
-duti handlers.duti
-
 echo -e "\033[1mFinal Steps\033[0m"
 
 cat << EOF
