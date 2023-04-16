@@ -14,7 +14,7 @@ OPT_PATH=$PREFIX/opt
 # SSH key
 ssh-keygen -t ed25519
 echo "ℹ️  Please add this public key to GitHub: https://github.com/account/ssh"
-cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_ed25519.pub
 echo
 
 # Xcode
