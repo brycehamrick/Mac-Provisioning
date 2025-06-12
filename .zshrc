@@ -3,7 +3,7 @@
 # ──────────────────────────────────────────────────────────────────────────────
 
 # Use GNU tar from Homebrew
-export PATH="$HOMEBREW_PREFIX/opt/gnu-tar/libexec/gnubin:$PATH"
+export PATH="$(brew --prefix)/opt/gnu-tar/libexec/gnubin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 
 # Hide "user@host" if default user
@@ -50,8 +50,8 @@ setopt inc_append_history
 # 3) chruby & Ruby
 # ──────────────────────────────────────────────────────────────────────────────
 
-source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
-source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+source "$(brew --prefix)/opt/chruby/share/chruby/chruby.sh"
+source "$(brew --prefix)/opt/chruby/share/chruby/auto.sh"
 chruby ruby-3.3.0
 
 # ──────────────────────────────────────────────────────────────────────────────
