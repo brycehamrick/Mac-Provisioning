@@ -26,6 +26,16 @@ export EDITOR="vim"
 alias d='git diff'
 alias tar='gtar'
 
+# known_hosts cleanup
+kh_fix() {
+  local line=$1
+  if [[ -z "$line" || "$line" -lt 2 ]]; then
+    echo "Usage: kh_fix <line number greater than 1>"
+    return 1
+  fi
+  sed -i '' "$((line - 1))d;${line}d" ~/.ssh/known_hosts
+}
+
 # Disable Homebrew analytics
 export HOMEBREW_NO_ANALYTICS=1
 
