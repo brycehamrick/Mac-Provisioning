@@ -4,10 +4,7 @@ Host *
   UseKeychain yes
   ServerAliveInterval 240
 
-Host pivpn.local
-  User bryce
-
-Host pivpn
+Host pivpn.local, pivpn
   User bryce
 
 Host github.com, bitbucket.org, *.rhcloud.com, git.brainstormforce.com
