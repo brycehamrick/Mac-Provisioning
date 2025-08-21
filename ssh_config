@@ -1,0 +1,126 @@
+HashKnownHosts no
+
+Host *
+  UseKeychain yes
+  ServerAliveInterval 240
+
+Host pivpn.local
+  User bryce
+
+Host pivpn
+  User bryce
+
+Host github.com, bitbucket.org, *.rhcloud.com, git.brainstormforce.com
+  User brycehamrick
+
+Host drbrighten
+  ForwardAgent yes
+  HostName 104.154.94.123
+  User drbrighten
+  Port 40058
+
+Host drbrighten-staging
+  ForwardAgent yes
+  HostName 104.154.94.123
+  User drbrighten
+  Port 60609
+
+Host drbrightencom
+  ForwardAgent yes
+  HostName 35.199.55.160
+  User drbrightencom
+  Port 20858
+
+Host drbrightencom-staging
+  ForwardAgent yes
+  HostName 35.186.185.224
+  User drbrightencom
+  Port 26552
+
+Host rubushealth
+  ForwardAgent yes
+  HostName 35.230.85.194
+  User rubushealth
+  Port 24391
+
+Host rubushealth-staging
+  ForwardAgent yes
+  HostName 35.230.85.194
+  User rubushealth
+  Port 43418
+
+Host gitlab.com
+  User bhamrick
+
+Host brightenwellness
+  ForwardAgent yes
+  HostName 35.230.26.179
+  User brightenwellness
+  Port 57240
+
+Host brightenwellness-staging
+  ForwardAgent yes
+  HostName 35.230.26.179
+  User brightenwellness
+  Port 63039
+
+Host brightenessentials
+  ForwardAgent yes
+  HostName 35.231.139.41
+  User brightenessentialsu
+  Port 63066
+
+Host brightenessentials-staging
+  ForwardAgent yes
+  HostName 35.231.139.41
+  User brightenessentialsu
+  Port 25584
+
+Host rebelgoddess
+  ForwardAgent yes
+  HostName 35.230.26.179
+  User rebelgoddess
+  Port 55626
+
+Host rebelgoddess-staging
+  ForwardAgent yes
+  HostName 35.230.26.179
+  User rebelgoddess
+  Port 57075
+
+Host portlandmastermind
+  ForwardAgent yes
+  HostName 35.230.80.41
+  User portlandmastermind
+  Port 22370
+
+Host rubusltd
+  ForwardAgent yes
+  HostName 35.203.140.105
+  User rubusltd
+  Port 20347
+
+Host rubusltd-staging
+  ForwardAgent yes
+  HostName 34.83.49.22
+  User rubusltd
+  Port 40226
+
+Host lifeofbrighten
+  ForwardAgent yes
+  HostName 35.231.139.41
+  User lifeofbrightencom
+  Port 15587
+
+Host prac-dbe
+  ForwardAgent yes
+  HostName 35.196.247.55
+  User practitionersdbe
+  Port 16681
+
+Host hamrickes
+  ForwardAgent yes
+  HostName 192.138.189.249
+  User stsdrdhz
+  Port 52836
+  IdentityFile ~/.ssh/bhamrick
