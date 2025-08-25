@@ -292,3 +292,12 @@ alias ff4k1080='v1080'
 alias ffnooutro='no_outro'
 alias ffaudio='xaudio'
 
+# ──────────────────────────────────────────────────────────────────────────────
+# 11) Load local environment variables
+# ──────────────────────────────────────────────────────────────────────────────
+
+# Load machine-specific environment variables if the file exists.
+# This file should NOT be committed to the repository.
+if [[ -f "${HOME}/.zsh_env" ]]; then
+  source "${HOME}/.zsh_env"
+fi
