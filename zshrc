@@ -2,9 +2,9 @@
 # 1) Path & core settings
 # ──────────────────────────────────────────────────────────────────────────────
 
-# Use GNU tar from Homebrew
+export PATH="$(brew --prefix)/bin:$PATH"
 export PATH="$(brew --prefix)/opt/gnu-tar/libexec/gnubin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/sbin:$PATH:/Users/brycehamrick/.local/bin:/Users/brycehamrick/venvs/aider/bin"
 
 # Hide "user@host" if default user
 DEFAULT_USER="$USER"
