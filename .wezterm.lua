@@ -34,6 +34,9 @@ return {
     { key = "7", mods = "CMD|OPT", action = wezterm.action{ActivateTab=6} },
     { key = "8", mods = "CMD|OPT", action = wezterm.action{ActivateTab=7} },
     { key = "9", mods = "CMD|OPT", action = wezterm.action{ActivateTab=8} },
+
+    -- Claude wants this
+    { key = "Enter", mods = "SHIFT", action = wezterm.action{SendString="\x1b\r"} },
   },
 
   -- Performance tweaks
